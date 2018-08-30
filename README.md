@@ -7,6 +7,7 @@ $ bash expand.sh # to create the symbolic links
 
 $ echo -n I && ./red -n " love " && echo you
 
-$ ./red -n j && ./orange -n o && ./yellow -n s && ./green -n h && ./blue -n u && ./pink -n a 
+$ ./red -n r && ./orange -n a && ./yellow -n i && ./green -n n && ./blue -n b && ./pink -n o  && ./white w
 
+$ ./pink ERROR: FILE NOT FOUND!
 ```
