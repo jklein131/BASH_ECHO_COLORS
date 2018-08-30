@@ -15,3 +15,4 @@ ln -s colors lightgreen
 ln -s colors lightblue
 ln -s colors lightcyan
 ln -s colors black
+chmod u+x colors
