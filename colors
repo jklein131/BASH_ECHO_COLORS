@@ -1,0 +1,32 @@
+COLOR='\033['
+case "$0" in
+    *"red"*) COLOR+='0;31m'  ;;
+    *"orange"*) COLOR+='0;33m'  ;;
+    *"yellow"*) COLOR+='1;33m'  ;;
+    *"green"*) COLOR+='0;32m'  ;;
+    *"blue"*) COLOR+='0;34m'  ;;
+    *"purple"*) COLOR+='0;35m'  ;;
+    *"pink"*) COLOR+='1;35m'  ;;
+    *"white"*) COLOR+='1;37m'  ;;
+    *"cyan"*) COLOR+='0;36m'  ;;
+    *"darkgray"*) COLOR+='1;30m'  ;;
+    *"lightgray"*) COLOR+='0;37m'  ;;
+    *"gray"*) COLOR+='0;37m'  ;;
+    *"lightred"*) COLOR+='1;31m'  ;;
+    *"lightgreen"*) COLOR+='1;32m'  ;;
+    *"lightcyan"*) COLOR+='1;36m'  ;;
+    *"black"*) COLOR+='0;30m'  ;;
+    *)             COLOR+='0;31m' ;;
+esac
+NC='\033[0m' # No Color
+ARGS=''
+while getopts "n" opt; do
+    case "$opt" in
+        n)
+         shift
+         echo -e -n "${COLOR}${@}${NC}"
+         exit
+        ;;
+    esac
+done
+echo -e "${COLOR}$@${NC}"
