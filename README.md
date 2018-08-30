@@ -1,4 +1,4 @@
-# BASH_ECHO_COLORS
+# BASH ECHO COLORS
 modified versions of echo that echo in a certain color. 
 
 Example Usage
